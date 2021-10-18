@@ -1,6 +1,6 @@
 {
-  "name": "@reactkads/styled-inputs",
-  "version": "0.0.1",
+  "name": "reactkads-styled-inputs",
+  "version": "0.0.6",
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
