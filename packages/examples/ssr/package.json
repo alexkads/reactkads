@@ -1,10 +1,7 @@
 {
-  "name": "@reactkads/examples-ssr",
+  "name": "@reactkads/examples-ssr-app",
   "version": "1.0.0",
-  "private": true,
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "dependencies": {}
+  "author": "Alex S S Fonseca",
+  "license": "MIT"
 }
