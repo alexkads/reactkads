@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "ESNext",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "isolatedModules": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "rootDirs": ["./packages", "./stories"],
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noImplicitAny": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "declarationMap": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["packages/library/*.ts", "packages/library/*.tsx"],
+  "exclude": ["node_modules", "examples"]
+}
