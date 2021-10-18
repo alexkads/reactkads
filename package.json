@@ -1,6 +1,7 @@
 {
   "name": "reactkads",
   "version": "0.0.2",
+  "author": "Alex S S Fonseca",
   "private": true,
   "description": "",
   "main": "dist/cjs/index.js",
@@ -27,16 +28,17 @@
     "library",
     "Landingpage"
   ],
-  "author": "Alex S S Fonseca",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexkads/styled-landingpage.git"
   },
   "license": "ISC",
-  "workspaces": [
-    "packages/*",
-    "examples/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "packages/examples/*"
+    ]
+  },
   "peerDependencies": {
     "react": ">= 16.8.0",
     "react-dom": ">= 16.8.0",
