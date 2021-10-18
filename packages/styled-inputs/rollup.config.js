@@ -13,26 +13,27 @@ const babelToES5Plugins = [
   ["@babel/plugin-transform-block-scoping", { throwIfClosureRequired: true }],
 ];
 
-const dist = "packages/library/dist";
+const path = "./";
+
 const production = process.env.ROLLUP_WATCH;
 
 export default [
   {
-    input: "./packages/library/index.ts",
+    input: `${path}/index.ts`,
     output: [
       {
-        file: `${dist}/cjs/index.js`,
+        file: `${path}/dist/cjs/index.js`,
         format: "cjs",
         sourcemap: true,
       },
       {
-        file: `${dist}/esm/index.js`,
+        file: `${path}/dist/esm/index.js`,
         format: "esm",
         sourcemap: true,
       },
       {
         name: "StyledLandingPage",
-        file: `${dist}/umd/index.js`,
+        file: `${path}/dist/umd/index.js`,
         globals: {
           react: "React",
         },

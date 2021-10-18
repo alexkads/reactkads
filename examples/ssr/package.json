@@ -6,10 +6,5 @@
   "scripts": {
     "start": "node index.js"
   },
-  "dependencies": {
-    "express": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "styled-landingpage": "file:../.."
-  }
+  "dependencies": {}
 }
