@@ -37,11 +37,6 @@ storiesOf("InputText", module).add("Login", () => {
 export default {
   title: "InputText",
   component: InputText,
-  parameters: {
-    actions: {
-      handles: ["", "click .btn"],
-    },
-  },
 } as Meta;
 
 const Template: Story<ComponentProps<typeof InputText>> = args => (

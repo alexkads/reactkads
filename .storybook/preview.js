@@ -1,4 +1,7 @@
 import { themes } from "@storybook/theming";
+import { ThemeProvider } from "styled-components";
+import { theme } from "../packages/styled-inputs/styles/theme";
+import GlobalStyle from "../packages/styled-inputs/styles/GlobalStyles";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -15,3 +18,12 @@ export const parameters = {
     light: { ...themes.normal, appBg: "red" },
   },
 };
+
+export const decorators = [
+  Story => (
+    <ThemeProvider theme={theme}>
+      <Story />
+      <GlobalStyle />
+    </ThemeProvider>
+  ),
+];

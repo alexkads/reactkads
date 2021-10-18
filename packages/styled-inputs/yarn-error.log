@@ -1,38 +1,60 @@
 Arguments: 
-  /usr/local/Cellar/node/16.11.0/bin/node /usr/local/Cellar/yarn/1.22.15/libexec/bin/yarn.js add express
+  /usr/local/Cellar/node/16.11.1/bin/node /usr/local/Cellar/yarn/1.22.17/libexec/bin/yarn.js add eslint
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/go/bin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
 
 Yarn version: 
-  1.22.15
+  1.22.17
 
 Node version: 
-  16.11.0
+  16.11.1
 
 Platform: 
   darwin x64
 
 Trace: 
   Invariant Violation: expected workspace package to exist for "eslint"
-      at invariant (/usr/local/Cellar/yarn/1.22.15/libexec/lib/cli.js:2314:15)
-      at _loop2 (/usr/local/Cellar/yarn/1.22.15/libexec/lib/cli.js:95113:9)
-      at PackageHoister.init (/usr/local/Cellar/yarn/1.22.15/libexec/lib/cli.js:95172:19)
-      at PackageLinker.getFlatHoistedTree (/usr/local/Cellar/yarn/1.22.15/libexec/lib/cli.js:48924:20)
-      at PackageLinker.<anonymous> (/usr/local/Cellar/yarn/1.22.15/libexec/lib/cli.js:48935:27)
+      at invariant (/usr/local/Cellar/yarn/1.22.17/libexec/lib/cli.js:2314:15)
+      at _loop2 (/usr/local/Cellar/yarn/1.22.17/libexec/lib/cli.js:95111:9)
+      at PackageHoister.init (/usr/local/Cellar/yarn/1.22.17/libexec/lib/cli.js:95170:19)
+      at PackageLinker.getFlatHoistedTree (/usr/local/Cellar/yarn/1.22.17/libexec/lib/cli.js:48922:20)
+      at PackageLinker.<anonymous> (/usr/local/Cellar/yarn/1.22.17/libexec/lib/cli.js:48933:27)
       at Generator.next (<anonymous>)
-      at step (/usr/local/Cellar/yarn/1.22.15/libexec/lib/cli.js:310:30)
-      at /usr/local/Cellar/yarn/1.22.15/libexec/lib/cli.js:328:14
+      at step (/usr/local/Cellar/yarn/1.22.17/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.22.17/libexec/lib/cli.js:328:14
       at new Promise (<anonymous>)
-      at new F (/usr/local/Cellar/yarn/1.22.15/libexec/lib/cli.js:5301:28)
+      at new F (/usr/local/Cellar/yarn/1.22.17/libexec/lib/cli.js:5301:28)
 
 npm manifest: 
   {
-    "name": "@reactkads/examples-ssr-app",
-    "version": "1.0.0",
-    "main": "index.js",
-    "author": "Alex S S Fonseca",
-    "license": "MIT"
+    "name": "@reactkads/styled-inputs",
+    "version": "0.0.1",
+    "license": "MIT",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "types": "index.ts",
+    "sideEffects": false,
+    "files": [
+      "dist"
+    ],
+    "scripts": {
+      "prebuild": "rimraf dist",
+      "build": "rollup -c"
+    },
+    "peerDependencies": {
+      "react": ">= 16.8.0",
+      "react-dom": ">= 16.8.0"
+    },
+    "devDependencies": {
+      "@types/react": "*",
+      "prettier": "*",
+      "react": "*",
+      "react-dom": "*"
+    },
+    "dependencies": {
+      "styled-components": "latest"
+    }
   }
 
 yarn manifest: 
